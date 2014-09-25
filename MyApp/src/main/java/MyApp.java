@@ -13,7 +13,7 @@ import com.foo.Bar;
    public static void main(String[] args) {
 
      // Set up a simple configuration that logs on the console.
-     BasicConfigurator.configure();
+//     BasicConfigurator.configure();
 
      logger.info("Entering application.");
      Bar bar = new Bar();
