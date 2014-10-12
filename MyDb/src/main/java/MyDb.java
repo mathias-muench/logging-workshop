@@ -1,8 +1,7 @@
-import com.foo.Bar;
-
- // Import log4j classes.
+// Import log4j classes.
  import org.apache.log4j.Logger;
- import org.apache.log4j.BasicConfigurator;
+
+import com.foo.Database;
 
  public class MyDb {
 
@@ -16,8 +15,7 @@ import com.foo.Bar;
 //     BasicConfigurator.configure();
 
      logger.info("Entering application.");
-     Bar bar = new Bar();
-     bar.doIt();
+     Database bar = new Database();
      logger.info("Exiting application.");
    }
  }

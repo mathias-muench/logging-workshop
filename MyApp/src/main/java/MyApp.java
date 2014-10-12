@@ -1,23 +1,19 @@
-import com.foo.Bar;
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.Logger;
 
- // Import log4j classes.
- import org.apache.log4j.Logger;
- import org.apache.log4j.BasicConfigurator;
+import com.foo.Database;
 
- public class MyApp {
+public class MyApp {
 
-   // Define a static logger variable so that it references the
-   // Logger instance named "MyApp".
-   static Logger logger = Logger.getLogger(MyApp.class);
+	private static final Logger LOG = Logger.getLogger(MyApp.class);
 
-   public static void main(String[] args) {
+	public static void main(String[] args) throws Throwable {
 
-     // Set up a simple configuration that logs on the console.
-//     BasicConfigurator.configure();
+		BasicConfigurator.configure();
 
-     logger.info("Entering application.");
-     Bar bar = new Bar();
-     bar.doIt();
-     logger.info("Exiting application.");
-   }
- }
+		LOG.info("Entering application.");
+		Database bar = new Database();
+		bar.doIt(args[0]);
+		LOG.info("Exiting application.");
+	}
+}

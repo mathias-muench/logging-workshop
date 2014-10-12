@@ -8,7 +8,7 @@
 
 <ui:composition template="template.xhtml">
 	<ui:define name="content">
-		<h:outputLabel value="#{helloBean.input}"></h:outputLabel>
+		<h:outputLabel value="#{helloBean.greeting} #{helloBean.input}"></h:outputLabel>
 	</ui:define>
 </ui:composition>
 
