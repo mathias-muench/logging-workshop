@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<faces-config
-    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
-    version="2.2">
+<faces-config xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
+	version="2.2">
 	<managed-bean>
 		<managed-bean-name>helloBean</managed-bean-name>
 		<managed-bean-class>de.mathias_muench.tomcat_logging.HelloBean</managed-bean-class>
@@ -11,8 +10,7 @@
 		<managed-property>
 			<property-name>input</property-name>
 			<property-class>java.lang.String</property-class>
-			<value>Imput</value>
+			<value>Input</value>
 		</managed-property>
 	</managed-bean>
-
 </faces-config>
