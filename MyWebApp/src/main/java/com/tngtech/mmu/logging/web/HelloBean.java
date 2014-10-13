@@ -5,7 +5,8 @@ import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.logging.Logger;
+
+import org.apache.log4j.Logger;
 
 public class HelloBean {
 	@SuppressWarnings("unused")
@@ -23,6 +24,8 @@ public class HelloBean {
 	public String getGreeting() throws IOException {
 		Path path = Paths.get(System.getProperty("user.home"), "database.txt");
 		LOG.info("Database File: " + path.toString());
-		return Files.readAllLines(path, Charset.forName("utf-8")).get(0);
+		String value = Files.readAllLines(path, Charset.forName("utf-8")).get(0);
+		LOG.debug("Database Value: " + value);
+		return value;
 	}
 }
