@@ -4,8 +4,8 @@ import org.junit.Test;
 
 public class DatabaseTest {
 	@Test
-	public void testDoIt() throws Exception {
-		Database bar = new Database();
-		bar.doIt("Bar");
-	}
+		public void testWrite() throws Exception {
+			Database bar = new Database();
+			bar.write("Bar");
+		}
 }
