@@ -5,7 +5,7 @@
 	version="2.2">
 	<managed-bean>
 		<managed-bean-name>helloBean</managed-bean-name>
-		<managed-bean-class>de.mathias_muench.tomcat_logging.HelloBean</managed-bean-class>
+		<managed-bean-class>com.tngtech.mmu.logging.web.HelloBean</managed-bean-class>
 		<managed-bean-scope>request</managed-bean-scope>
 		<managed-property>
 			<property-name>input</property-name>

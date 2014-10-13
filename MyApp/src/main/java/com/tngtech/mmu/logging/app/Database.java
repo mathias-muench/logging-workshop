@@ -1,4 +1,4 @@
-package com.foo;
+package com.tngtech.mmu.logging.app;
 
 import java.io.IOException;
 import java.nio.charset.Charset;

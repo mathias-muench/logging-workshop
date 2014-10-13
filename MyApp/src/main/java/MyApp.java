@@ -1,7 +1,7 @@
 import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
 
-import com.foo.Database;
+import com.tngtech.mmu.logging.app.Database;
 
 public class MyApp {
 

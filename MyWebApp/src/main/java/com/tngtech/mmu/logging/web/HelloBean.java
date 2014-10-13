@@ -1,4 +1,4 @@
-package de.mathias_muench.tomcat_logging;
+package com.tngtech.mmu.logging.web;
 
 import java.io.IOException;
 import java.nio.charset.Charset;

@@ -1,4 +1,4 @@
-package com.foo;
+package com.tngtech.mmu.logging.app;
 
 import org.junit.Test;
 
