@@ -1,0 +1,11 @@
+export JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.65-2.5.2.5.fc20.x86_64
+export PATH=$JAVA_HOME/bin:$PATH
+
+export ECLIPSE_HOME=$PWD/eclipse
+export PATH=$ECLIPSE_HOME:$PATH
+
+export M2_HOME=$PWD/apache-maven-3.2.3
+export PATH=$M2_HOME/bin:$PATH
+
+export CATALINA_HOME=$PWD/apache-tomcat-7.0.56
+export PATH=$CATALINA_HOME/bin:$PATH
