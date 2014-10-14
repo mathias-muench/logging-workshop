@@ -4,6 +4,11 @@
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
 	version="2.2">
 	<managed-bean>
+		<managed-bean-name>database</managed-bean-name>
+		<managed-bean-class>com.tngtech.mmu.logging.web.Database</managed-bean-class>
+		<managed-bean-scope>application</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
 		<managed-bean-name>helloBean</managed-bean-name>
 		<managed-bean-class>com.tngtech.mmu.logging.web.HelloBean</managed-bean-class>
 		<managed-bean-scope>request</managed-bean-scope>
@@ -11,6 +16,11 @@
 			<property-name>input</property-name>
 			<property-class>java.lang.String</property-class>
 			<value>Input</value>
+		</managed-property>
+		<managed-property>
+			<property-name>db</property-name>
+			<property-class>com.tngtech.mmu.logging.web.Database</property-class>
+			<value>#{database}</value>
 		</managed-property>
 	</managed-bean>
 </faces-config>

@@ -1,17 +1,23 @@
 package com.tngtech.mmu.logging.web;
 
 import java.io.IOException;
-import java.nio.charset.Charset;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 
 import org.apache.log4j.Logger;
 
 public class HelloBean {
 	@SuppressWarnings("unused")
 	private static final Logger LOG = Logger.getLogger("HelloBean");
+	
+	private Database db;
 	private String input;
+	
+	public Database getDb() {
+		return db;
+	}
+
+	public void setDb(Database db) {
+		this.db = db;
+	}
 
 	public String getInput() {
 		return input;
@@ -22,10 +28,6 @@ public class HelloBean {
 	}
 
 	public String getGreeting() throws IOException {
-		Path path = Paths.get(System.getProperty("user.home"), "database.txt");
-		LOG.info("Database File: " + path.toString());
-		String value = Files.readAllLines(path, Charset.forName("utf-8")).get(0);
-		LOG.debug("Database Value: " + value);
-		return value;
+		return db.read();
 	}
 }
