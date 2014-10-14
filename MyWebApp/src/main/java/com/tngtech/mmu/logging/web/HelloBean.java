@@ -2,12 +2,7 @@ package com.tngtech.mmu.logging.web;
 
 import java.io.IOException;
 
-import org.apache.log4j.Logger;
-
 public class HelloBean {
-	@SuppressWarnings("unused")
-	private static final Logger LOG = Logger.getLogger("HelloBean");
-	
 	private Database db;
 	private String input;
 	
