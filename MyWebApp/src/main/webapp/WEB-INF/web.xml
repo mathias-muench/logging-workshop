@@ -13,4 +13,7 @@
     <servlet-name>Faces Servlet</servlet-name>
     <url-pattern>*.xhtml</url-pattern>
   </servlet-mapping>
+  <listener>
+  	<listener-class>com.tngtech.mmu.logging.web.LogInit</listener-class>
+  </listener>
 </web-app>
